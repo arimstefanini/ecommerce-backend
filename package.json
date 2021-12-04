@@ -1,0 +1,11 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/arimstefanini/ecommerce-backend.git",
+  "author": "Ariela M. Stefanini <58310189+arimstefanini@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
