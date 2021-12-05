@@ -36,7 +36,7 @@ router.delete("/:id", verifyTokenAndAuthorization, async(req:any,res:any)=>{
     } catch(err){
         res.status(500).json(err);
     }
-})
+});
 
 //GET USER
 router.get("/find/:id", verifyTokenAndAdmin, async(req,res)=>{
@@ -47,7 +47,7 @@ router.get("/find/:id", verifyTokenAndAdmin, async(req,res)=>{
     } catch(err){
         res.status(500).json(err);
     }
-})
+});
 
 //GET ALL USER
 router.get("/", verifyTokenAndAdmin, async(req, res)=>{
@@ -60,7 +60,7 @@ router.get("/", verifyTokenAndAdmin, async(req, res)=>{
     } catch(err){
         res.status(500).json(err);
     }
-})
+});
 
 //GET USER STAT
 router.get("/stats", verifyTokenAndAdmin, async(req, res)=>{
@@ -86,6 +86,6 @@ router.get("/stats", verifyTokenAndAdmin, async(req, res)=>{
     } catch(err){
         res.status(500).json(err);
     }
-})
+});
 
 export {router as userRoute}

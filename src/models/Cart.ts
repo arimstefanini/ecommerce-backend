@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-const CartSchema = new Schema(
+const schema = new Schema(
     {
         userId:{type: String, required: true},
         products:[
@@ -19,4 +19,4 @@ const CartSchema = new Schema(
     { timestamps: true }
 );
 
-module.exports = model("Cart", CartSchema)
+export const CartSchema = model("Cart", schema)
